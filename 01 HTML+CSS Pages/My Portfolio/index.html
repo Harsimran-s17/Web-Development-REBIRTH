@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        .intro{
+            background-color: azure;
+            padding:10px;
+            margin: 10px;
+        }
+        .photo{
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+
+        }
+        #pic{
+            padding:20px;
+            clip-path: circle();
+            /* border-radius: 50%; */
+            height: 25%;
+            width: 22%;
+        }
+        .name{
+            display: flex;
+            justify-content: center;
+        }
+        #subtitle{
+            display: flex;
+            justify-content: center;
+            font-weight: 30px;
+        }
+        .about, .myWork{
+            background-color: #e9e9e9;
+            margin:10px
+        }
+        .aboutPara{
+            padding:5px;
+        }
+        .listOfWorks{
+            display:flex;
+            justify-content: center;
+        }
+        .projects{
+            margin: 20px 80px;
+            height:400px;
+            width: 400px;
+            border: 1px dotted;
+            display: inline-block;   
+            /* justify-content: center; */
+            align-items: center;
+            /* align-items: center;   will align the items in center vertically and only used with display : flex*/
+            /* text-align: center;    will allign the text in center horizontally */
+        }
+        h{
+            margin:auto;
+        }
+        footer{
+            text-align: center;
+            background-color: #e9e9e9;
+            padding: 10px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="photo">
+            <img id="pic" src="photo.jpg" alt="">
+        </div>
+        <h1 class="name">Harsimran Singh</h1>
+        <p id="subtitle">Software Engineer | Sportsman | Philosphy Scholar | Poet</p>
+    </div>
+
+    <div class="about">
+        <h1 style="padding:5px;">About Me</h1>
+        <p class="aboutPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus illo aliquid excepturi a ab fuga numquam, ipsa rerum! Consequatur consequuntur iusto quisquam officiis porro assumenda quas velit aut. Ea nobis earum doloribus iure, temporibus quis hic aliquid explicabo consequuntur maxime impedit, est minima accusantium rerum dolorem voluptates magnam soluta!</p>
+    </div>
+
+    <section class="myWork">
+        <h1 style="padding:5px;">My Work</h1>
+        <!-- <div class="listOfWorks"> -->
+            <div id="project1" class="projects">
+               Project 1
+            </div>
+            <div id="project2" class="projects">
+                Project 2
+            </div>
+            <div id="project3" class="projects">
+                Project 3 
+            </div>
+        <!-- </div> -->
+    </section>
+    <footer>
+        <h6>Contact me at Library</h6>
+    </footer>
+</body>
+</html>
